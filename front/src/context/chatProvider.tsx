@@ -1,4 +1,4 @@
-import ChatContext from './chatContext';
+import ChatContext from './ChatContext';
 import {useState, ReactNode} from 'react';
 
 const ChatProvider = ({children}: {children: ReactNode}) => {
