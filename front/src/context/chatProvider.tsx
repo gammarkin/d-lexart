@@ -1,8 +1,12 @@
-import ChatContext from './ChatContext';
+import ChatContext from './chatContext';
 import {useState, ReactNode} from 'react';
 
 const ChatProvider = ({children}: {children: ReactNode}) => {
-	const [message, setMessage] = useState({content: '', sender: ''});
+	const [message, setMessage] = useState({
+		content: '',
+		sender: '',
+		timestamp: '',
+	});
 
 	const value = {message, setMessage};
 
