@@ -1,5 +1,5 @@
-import ChatProvider from './context/ChatProvider';
-import ChatBot from './ChatBot';
+import ChatProvider from '../context/ChatProvider';
+import ChatBot from '../ChatBot';
 
 import {MantineProvider} from '@mantine/core';
 
