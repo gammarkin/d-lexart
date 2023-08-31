@@ -5,7 +5,7 @@ import {model as mongooseCreateModel, Schema} from 'mongoose';
 const userMongooseSchema = new Schema<messages>(
 	{
 		messages: {
-			type: [{user: String, content: String}],
+			type: [{user: String, content: String, timestamp: Date}],
 			required: true,
 		},
 	},
