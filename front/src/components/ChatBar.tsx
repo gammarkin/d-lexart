@@ -17,7 +17,7 @@ export default function ChatBar() {
 		if (event.key === 'Enter') {
 			setMessage({
 				content: currentMessage,
-				sender: 'user',
+				author: 'user',
 				timestamp: new Date().toISOString(),
 			});
 

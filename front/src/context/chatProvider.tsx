@@ -8,7 +8,9 @@ const ChatProvider = ({children}: {children: ReactNode}) => {
 		timestamp: '',
 	});
 
-	const value = {message, setMessage};
+	const [messages, setMessages] = useState([]);
+
+	const value = {message, setMessage, messages, setMessages};
 
 	return <ChatContext.Provider value={value}>{children}</ChatContext.Provider>;
 };
